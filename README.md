@@ -112,4 +112,4 @@ covid19_analysis/
 ---
 
 ## Author
-Made by **(RamtinS-Design)**  
+Made by (RamtinS-Design) 
