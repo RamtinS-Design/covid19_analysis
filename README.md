@@ -111,5 +111,8 @@ covid19_analysis/
 
 ---
 
+## License
+MIT. See[License](License)
+
 ## Author
 Made by (RamtinS-Design) 
