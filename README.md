@@ -1,14 +1,14 @@
 # COVID-19 Global Data Analysis
 
-A beginner data analysis project using **Python**, **Pandas**, and **NumPy**.
+A beginner data analysis project using **Python**, **Pandas**, **NumPy**, **Matplotlib**, and **Seaborn**.
 
 ---
 
 ## About This Project
 
-This project analyzes the COVID-19 global dataset from Kaggle. The goal was to practice real-world data science skills: cleaning messy data, calculating meaningful statistics, and drawing conclusions from numbers.
+This project analyzes the COVID-19 global dataset from Kaggle. The goal was to practice real-world data science skills: cleaning messy data, calculating meaningful statistics, drawing conclusions from numbers, and visualizing findings with charts.
 
-This is part of my learning journey — I focused on getting solid with Pandas and NumPy before adding visualizations.
+This is part of my learning journey — I first started by using   Pandas and NumPy, then added Matplotlib and Seaborn to bring the data to life visually.
 
 ---
 
@@ -54,6 +54,27 @@ This is part of my learning journey — I focused on getting solid with Pandas a
 - CFR percentile breakdown
 - Recovery rate by continent
 
+### 6. Visualization with Matplotlib & Seaborn *(new)*
+- Line plot — daily new cases with 7-day rolling average overlay
+- Bar chart — top 10 countries by confirmed cases (with value labels)
+- Histogram — distribution of Case Fatality Rate across countries
+- Seaborn box plot — CFR spread by continent
+- Seaborn heatmap — correlation matrix of key metrics
+- Dashboard — 4-panel figure combining all key charts into one image
+
+---
+
+## Charts Produced
+
+| File | Chart Type | What It Shows |
+|------|-----------|---------------|
+| `plot_01_daily_new_cases.png` | Line plot | Daily new cases + 7-day rolling average |
+| `plot_02_top10_countries.png` | Bar chart | Top 10 countries by confirmed cases |
+| `plot_03_cfr_histogram.png` | Histogram | CFR distribution across countries |
+| `plot_04_cfr_by_continent.png` | Seaborn box plot | CFR spread per continent |
+| `plot_05_correlation_heatmap.png` | Seaborn heatmap | Correlation between key metrics |
+| `plot_06_dashboard.png` | Multi-panel dashboard | Full summary — 4 charts in one figure |
+
 ---
 
 ## Key Findings
@@ -74,7 +95,7 @@ This is part of my learning journey — I focused on getting solid with Pandas a
 
 2. Install dependencies:
    ```bash
-   pip install pandas numpy jupyter
+   pip install pandas numpy matplotlib seaborn jupyter
    ```
 
 3. Open the notebook:
@@ -97,15 +118,31 @@ covid19_analysis/
 ├── day_wise.csv
 ├── covid_19_clean_complete.csv
 ├── full_grouped.csv
-├── usa_county_wise.csv
+├── plot_01_daily_new_cases.png   ← Generated later
+├── plot_02_top10_countries.png
+├── plot_03_cfr_histogram.png
+├── plot_04_cfr_by_continent.png
+├── plot_05_correlation_heatmap.png
+├── plot_06_dashboard.png
 └── README.md
 ```
 
 ---
 
+## Libraries Used
+
+| Library | Purpose |
+|---------|---------|
+| `pandas` | Data loading, cleaning, and analysis |
+| `numpy` | Calculated columns (CFR, recovery rate) |
+| `matplotlib` | Line plots, bar charts, histograms, dashboard |
+| `seaborn` | Box plots, heatmap, statistical styling |
+
+---
+
 ## Future Improvements
-- **Visualizations** with `matplotlib` and `seaborn`
-- **Interactive maps** with `plotly`
+- **Interactive charts** with `plotly`
+- **Choropleth world map** with `plotly.express`
 - **Time-series forecasting** with `statsmodels` or `Prophet`
 - **Machine learning** to predict outcomes
 
@@ -115,4 +152,4 @@ covid19_analysis/
 MIT. See [License](License)
 
 ## Author
-Made by (RamtinS-Design) 
+Made by (RamtinS-Design)
